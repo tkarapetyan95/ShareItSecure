@@ -104,7 +104,7 @@ namespace ShareItSecure
 
         public async Task SaveTaskAsync(TodoItem item)
         {
-            if (item.Id == null)
+            if (item.Id == null)//Adding new item
             {
                 await todoTable.InsertAsync(item);
             }
